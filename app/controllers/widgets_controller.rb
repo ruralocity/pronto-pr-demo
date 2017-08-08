@@ -10,6 +10,7 @@ class WidgetsController < ApplicationController
   # GET /widgets/1
   # GET /widgets/1.json
   def show
+    Logger.info("I am a really long line that puts uninteresting noise ine log. Rubocop won't like me.")
   end
 
   # GET /widgets/new
