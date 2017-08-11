@@ -4,6 +4,7 @@ class WidgetsController < ApplicationController
   # GET /widgets
   # GET /widgets.json
   def index
+    logger.info "I am a really long line that goes and goes and goes and goes!!!!"
     @widgets = Widget.all
   end
 
@@ -19,6 +20,8 @@ class WidgetsController < ApplicationController
 
   # GET /widgets/1/edit
   def edit
+    x = %w(a b c)
+    x.each{|f| "hello"}
   end
 
   # POST /widgets
